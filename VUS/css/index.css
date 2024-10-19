@@ -1,0 +1,135 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear{
+    clear: both;
+}
+
+h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 16px;
+}
+
+.line{
+    background: url('../img/line.png');
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+
+/* HEADER */
+.header__logoImg{
+    float: left;
+}
+
+.header__slogan{
+    float: right;
+    margin-right: 120px;
+}
+
+.header__navbar ul{
+    list-style: none;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.header__navbar ul li{
+    display: inline;
+}
+
+.header__navbar ul a{
+    text-decoration: none;
+    font-weight: bold;
+    /* vw, vh */
+    /* 1.13% viewport width */
+    font-size: 1.13vw;
+    /* 1 em = 1.13vw */
+    /* font-size: 16px;
+    1 em = 16px */
+    padding: 0 0.3em;
+    color: #636363;
+    text-transform: uppercase;
+}
+
+.header__navbar ul li:hover{
+    border-bottom: 2px solid #B31C25;
+}
+
+.header__navbar ul .active{
+    border-bottom: 2px solid #B31C25;
+}
+
+/* CAROUSEL */
+.carousel{
+    background-image: url('../img/slider_1.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+/* INTRO */
+.intro p{
+    text-align: center;
+    color: #636363;
+    line-height: 25px;
+    padding: 0 25px;
+}
+
+/* PROGRAMS */
+.programs__content {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.programs__content img{
+    width: 100%;
+}
+
+.programs__content h3{
+    color: #B31C25;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px 0 5px;
+}
+
+.programs__content p{
+    color: #636363;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* INTRO */
+
+/* FOOTER */
+.footer {
+    background-color: #B31C25;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer img{
+    float: left;
+}
+
+.footer p{
+    float: right;
+    width: 50%;
+    word-spacing: 2px;
+    text-align: justify;
+}
+
