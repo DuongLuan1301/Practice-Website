@@ -85,7 +85,26 @@
         </div>
     </section>
     <!-- NUMBER -->
-    <section class="number"></section>
+    <section class="number">
+        <div class="number__content">
+            <div class="number__item">
+                <p class="counter">3500</p>
+                <p>Coffee</p>
+            </div>
+            <div class="number__item">
+                <p class="counter">650</p>
+                <p>Happy Client</p>
+            </div>
+            <div class="number__item">
+                <p class="counter">10</p>
+                <p>Experience</p>
+            </div>
+            <div class="number__item">
+                <p class="counter">1010</p>
+                <p>Expert Worker</p>
+            </div>
+        </div>
+    </section>
     <!-- SERVICES -->
     <section class="services"></section>
     <!-- GALLERY -->
@@ -98,5 +117,19 @@
     <section class="contact"></section>
     <!-- FOOTER -->
     <footer></footer>
+
+    <!-- Jquery help running the animation libary -->
+    <script 
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <!-- Jquery Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- CountUp JS -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+
 </body>
 </html>
