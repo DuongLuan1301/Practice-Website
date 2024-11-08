@@ -32,13 +32,13 @@ button{
     padding: 13px 32px;
     cursor: pointer;
     letter-spacing: 1px;
+    transition: all .5s;
 }
 
 button:hover{
     background-color: white;
     color: black;
     border-color: #ff0e83;
-    transition: all .5s;
 }
 
 h2{
@@ -260,6 +260,10 @@ header{
     transition: all 0.5s;
 }
 
+.services__item:hover i{
+    color: #ff0e83;
+}
+
 .services__item h3{
     font-size: 1.5rem;
     font-weight: 500;
@@ -275,10 +279,6 @@ header{
 .services__item button{
     padding: 12px 27px;
     border-width: 2px;
-}
-
-.services__item:hover i{
-    color: #ff0e83;
 }
 
 /* GALLERY */
@@ -594,9 +594,105 @@ header{
 .contact__info i{
     font-size: 2rem;
     color: #4e2a84;
+    margin-bottom: 5px;
 }
 
 .contact__info p{
     font-size: .8rem;
+    margin: 5px 0;
+}
+
+/* FOOTER */
+footer{
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer__main{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.footer__item{
+    width: 25%;
+    margin: 0 25px;
+}
+
+.footer__item h3{
+    font-size: 1.3rem;
+    color: #ff0e83;
+    margin-bottom: 1rem;
+}
+
+.footer__item p{
+    font-size: .8rem;
+    line-height: 28px;
+    padding-bottom: 16px;
+}
+
+.footer__socials i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid white;
+    margin-right: 10px;
+    transition: all .5s;
+}
+
+.footer__socials i:hover{
+    color: #ff0e83;
+    border-color: #ff0e83;
+}
+
+.footer__time, .footer__time_first {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted white;
+}
+
+.footer__time_first p{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer__time p{
+    padding: 0;
     margin: 10px 0;
+}
+
+.footer__item .footer__subscribe input{
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.footer__item .footer__subscribe input:focus{
+    outline: none;
+}
+
+.footer__item .footer__subscribe button{
+    padding: 7px 16px;
+    color: black;
+    border-color: #ff0e83;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer__item .footer__subscribe button:hover{
+    border-color: black;
+}
+
+.footer__copyright{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.footer__copyright span{
+    color: #ff0e83;
 }
