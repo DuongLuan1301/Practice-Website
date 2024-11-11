@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- FONT GOOGLE -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- LIGHTBOX CSS -->
     <link rel="stylesheet" href="./css/lightbox.css">
@@ -30,15 +29,15 @@
         <div class="header__content">
             <p>BAKE</p>
             <nav>
-                <ul>
+                <ul id="mainNav">
                     <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">CLIENTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#INTRO">ABOUT</a></li>
+                    <li><a href="#SERVICES">SERVICE</a></li>
+                    <li><a href="#GALLERY">GALLERY</a></li>
+                    <li><a href="#FEEDBACK">CLIENTS</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
                 </ul>
-            </nav>
+            </nav>  
         </div>
     </header>
     <!-- CAROUSEL -->
@@ -50,7 +49,7 @@
         </div>
     </section>
     <!-- INTRO -->
-    <section class="intro">
+    <section class="intro" id="INTRO">
         <div class="intro__item intro__text">
             <div>
                 <h3>Tradition</h3>
@@ -117,7 +116,7 @@
         </div>
     </section>
     <!-- SERVICES -->
-    <section class="services">
+    <section class="services" id="SERVICES">
         <h2>OUR SERVICES</h2>
         <div class="services__content">
             <div class="services__item">
@@ -147,7 +146,7 @@
         </div>
     </section>
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="GALLERY">
         <h2>OUR GALLERY</h2>
         <div class="gallery__content">
             <figure class="gallery__item gallery__g1">
@@ -316,7 +315,7 @@
         </div>
     </section>
     <!-- FEEDBACK -->
-    <section class="feedback">
+    <section class="feedback" id="FEEDBACK">
         <h2>TESTIMONIALS</h2>
         <div class="feedback__content">
             <div class="owl-carousel owl-theme">
@@ -342,7 +341,7 @@
         </div>
     </section>
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="contact" id="CONTACT">
         <h2>CONTACT</h2>
         <div class="contact__form">
             <form action="">
@@ -355,7 +354,10 @@
             </form>
         </div>
         <div class="contact__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6697272398796!2d106.68225827763102!3d10.759917069104404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7c3ed289%3A0xa06651894598e488!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTw6BpIEfDsm4!5e0!3m2!1svi!2s!4v1730910517637!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6697272398796!2d106.68225827763102!3d10.759917069104404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7c3ed289%3A0xa06651894598e488!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTw6BpIEfDsm4!5e0!3m2!1svi!2s!4v1730910517637!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contact__info">
             <div class="contact__item">
@@ -380,8 +382,10 @@
         <div class="footer__main">
             <div class="footer__item">
                 <h3>About Us</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam eaque minima quisquam quibusdam nobis repellendus laboriosam asperiores, quos repellat sint.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, laboriosam fugiat blanditiis a sunt magnam.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam eaque minima quisquam quibusdam
+                    nobis repellendus laboriosam asperiores, quos repellat sint.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, laboriosam fugiat blanditiis a sunt
+                    magnam.</p>
                 <div class="footer__socials">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-google-plus-g"></i>
@@ -433,13 +437,19 @@
                     <input type="email" placeholder="name@example.com">
                     <button type="submit">Send</button>
                 </form>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusamus error ipsa deleniti animi nemo et sunt doloribus necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae accusamus error ipsa deleniti animi
+                    nemo et sunt doloribus necessitatibus.</p>
             </div>
         </div>
         <div class="footer__copyright">
             <p>&copy; 2024 Lorem ipsum dolor sit, amet. | Design by <span>DuongLuan</span></p>
         </div>
     </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- Jquery help running the animation libary -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -471,6 +481,27 @@
                 },
             }
         })
+    </script>
+    <!-- Back to top JS -->
+    <script src="./js/util.js"></script>
+    <script src="./js/mainBackToTop.js"></script>
+
+    <!-- Navigation Bar JS -->
+    <script>
+        // ul tag
+        var mainNav = document.getElementById("mainNav");
+        // li tag
+        var listNav = mainNav.getElementsByTagName("li");
+        for(var i=0; i<listNav.length; i++) {
+            listNav[i].addEventListener("click",function(){
+                //find tag(li) which has active class(.active)
+                var current = document.querySelector("#mainNav .active");
+                //delete active class(.active) of tag(li) currently
+                current.className = current.className.replace("active", "");
+                //add active class to tag(li) which is clicked
+                this.className += "active";
+            });
+        }
     </script>
 </body>
 
