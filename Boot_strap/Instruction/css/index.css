@@ -1,0 +1,52 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Work Sans', serif;
+}
+
+/* HEADER */
+.header__top{
+    background-color: #ff4f81;
+    font-size: 14px;
+}
+
+.header__top a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__right a{
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: .25rem;
+}
+
+.navInstruction a{
+    color: black;
+}
+
+.navInstruction .navbar-brand p:first-child{
+    font-size: 36px;
+}
+
+.navInstruction .navbar-brand p:first-child i{
+    transform: skewX(-10deg);
+}
+
+.navInstruction .navbar-brand p:last-child{
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #ff4f81;
+    font-weight: bold;
+}
