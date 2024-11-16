@@ -21,6 +21,13 @@ body {
     color: white;
 }
 
+.header__left a{
+    transition: all .5s;
+}
+.header__left a:hover{
+    color: black;
+}
+
 .header__right a{
     width:30px;
     height: 30px;
@@ -30,6 +37,11 @@ body {
     border: 1px solid black;
     display: inline-block;
     margin-left: .25rem;
+    transition: all .5s;
+}
+.header__right a:hover{
+    background-color: #ff4f81;
+    border-color: white;
 }
 
 .navInstruction a{
@@ -49,4 +61,50 @@ body {
     letter-spacing: 3px;
     color: #ff4f81;
     font-weight: bold;
+}
+
+#navbarInstruction .nav-item{
+    margin: 0 15px;
+}
+
+#navbarInstruction .nav-link{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+#navbarInstruction .nav-item:hover .nav-link{
+    color: #ff4f81;
+}
+
+#navbarInstruction .nav-item::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ff4f81;
+    display: block;
+    transition: all .5s;
+}
+#navbarInstruction .nav-item:hover::after{
+    width: 100%;
+}
+
+#navbarInstruction .nav-item.active .nav-link{
+    color: #ff4f81;
+}
+#navbarInstruction .nav-item.active::after{
+    width: 100%;
+    background-color: #ff4f81;
+}
+
+#navbarInstruction .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#navbarInstruction .dropdown-item{
+    color: white;
+    transition: all .5s;
+}
+#navbarInstruction .dropdown-item:focus, #navbarInstruction .dropdown-item:hover{
+    background-color: transparent;
+    color: #ff4f81;
 }
