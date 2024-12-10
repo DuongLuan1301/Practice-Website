@@ -111,6 +111,10 @@ body {
     color: #ff4f81;
 }
 
+#navbarInstruction .nav-link:focus, #navbarInstruction .nav-link:hover{
+    color: #ff4f81;
+}
+
 #navbarInstruction .nav-item::after{
     content: '';
     width: 0;
@@ -141,6 +145,15 @@ body {
 #navbarInstruction .dropdown-item:focus, #navbarInstruction .dropdown-item:hover{
     background-color: transparent;
     color: #ff4f81;
+}
+
+.navInstruction .navbar-toggler{
+    background-color: black;
+    color: #ff4f81;
+    border-radius: 0;
+}
+.navInstruction .navbar-toggler:focus{
+    outline: none !important;
 }
 
 /* CAROUSEL */
@@ -527,6 +540,33 @@ footer{
 
 /*---------------------------------------------RESPONSIVE---------------------------------------------*/
 /* HEADER */
+@media screen and (max-width: 991.98px) {
+    .navInstruction .navbar-brand p:first-child {
+        /* 3% so voi width cua trinh duyet */
+        font-size: 3vw;
+    }
+    .navInstruction .navbar-brand p:last-child {
+        /* 3% so voi width cua trinh duyet */
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 767.98px){
+    .navInstruction .navbar-nav{
+        background-color: #eee;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #navbarInstruction .dropdown-menu{
+        background-color: #e0e1e2;
+        border-color: #e0e1e2;
+        text-align: center;
+    }
+    #navbarInstruction .dropdown-item{
+        color: black;
+    }
+}
+
 @media screen and (max-width:575.98px) {
     .header__left a {
         display: block;
@@ -551,16 +591,5 @@ footer{
     #navbarInstruction .nav-link {
         font-size: 12px;
         padding: 5px;
-    }
-}
-
-@media screen and (max-width: 991.98px) {
-    .navInstruction .navbar-brand p:first-child {
-        /* 3% so voi width cua trinh duyet */
-        font-size: 3vw;
-    }
-    .navInstruction .navbar-brand p:last-child {
-        /* 3% so voi width cua trinh duyet */
-        font-size: 1.5vw;
     }
 }
